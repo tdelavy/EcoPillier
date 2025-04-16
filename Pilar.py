@@ -96,12 +96,18 @@ st.markdown(
 
 # 6. Barre latérale
 with st.sidebar:
-    st.image("https://your-domain.com/logo.png", width=150)
     st.title("Ecopillier Sàrl")
     st.write("⚡ Expert en solutions énergétiques")
     st.write("📍 Rue Jean-Charles AMAT 1, 1202 Genève")
     st.write("---")
-
+    st.write("1. Audit énergétique complet")
+    st.write("2. Solutions d’efficacité énergétique")
+    st.write("3. Installation de panneaux photovoltaïques")
+    st.write("4. Stockage d’énergie par batteries")
+    st.write("5. Bornes de recharge pour véhicules électriques")
+    st.write("6. Contrats de performance énergétique (CPE)") 
+    st.write("7. Solutions de pilotage et supervision (EMS/BMS)")
+    
 # 7. Titre principal
 st.markdown("<h1 style='text-align:center;'>💬 Chat avec EcoPillier</h1>", unsafe_allow_html=True)
 
