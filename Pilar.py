@@ -4,7 +4,7 @@ from openai import OpenAI
 import streamlit as st
 
 # 1. Clé API hardcodée (⚠️ Ne pas versionner publiquement)
-api_key = OPENAI_KEY
+api_key = st.secrets.get("OPENAI_KEY")
 client = OpenAI(api_key=api_key)
 
 # 2. Liste des services
