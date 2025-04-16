@@ -9,16 +9,16 @@ client = OpenAI(api_key=api_key)
 
 # 2. Liste des services
 services = [
-    "Audit énergétique complet: diagnostic de la consommation et optimisation.",
-    "Solutions d’efficacité énergétique (LED, pompes, isolation, CVC).",
+    "Audit énergétique complet: Réalisation d’un diagnostic de la consommation (bâtiments, process industriels) et identification des postes d’optimisation pour réduire les coûts et l’empreinte carbone.",
+    "Solutions d’efficacité énergétique: Mise en place de systèmes d’éclairage LED, pompes à haut rendement, variateurs de fréquence, isolation thermique et optimisation des équipements CVC (chauffage, ventilation, climatisation).",
     "Installation de panneaux photovoltaïques: conception, pose, maintenance.",
-    "Stockage d’énergie par batteries pour lisser la demande.",
-    "Bornes de recharge VE: installation & gestion (AC/DC).",
-    "Contrats de performance énergétique (CPE) garantissant des économies.",
-    "EMS/BMS: supervision & pilotage automatisé de la consommation.",
-    "Fourniture d’électricité verte 100 % renouvelable.",
-    "Conseil en aides & subventions (CEE, crédits d’impôt).",
-    "Programmes de flexibilité & gestion de la demande réseau."
+    "Stockage d’énergie par batteries: Fourniture et installation de batteries domestiques ou de moyenne capacité (stationnaire) pour lisser la demande, profiter du pic solaire et sécuriser l’alimentation.",
+    "Bornes de recharge Voitures Eléctriques: Installation et gestion de bornes de recharge intelligentes (AC/DC) à domicile, en entreprise ou dans les parcs publics, avec gestion de la demande et facturation associée.",
+    "Contrats de performance énergétique (CPE): Garantie de résultat sur les économies d’énergie, financement des travaux par les économies générées, avec suivi et reporting périodique des gains.",
+    "EMS/BMS: supervision & pilotage automatisé de la consommation: Mise en place de systèmes de gestion de l’énergie ou des bâtiments (Energy/Building Management Systems) pour monitorer en temps réel et piloter automatiquement la consommation.",
+    "Fourniture d’électricité verte: Vente de kWh certifiés 100 % renouvelables (hydraulique, éolien, solaire), éventuellement couplés à des garanties d’origine et des labels (EKOénergies, TÜV).",
+    "Conseil en aides & subventions (CEE, crédits d’impôt): Accompagnement pour monter des dossiers de certificats d’économies d’énergie (CEE), crédits d’impôt, aides cantonales ou fédérales (Programme Bâtiments, ProKilowatt), et conformité aux normes (ISO 50001, RE2020).",
+    "Programmes de flexibilité & gestion de la demande: Animation de dispositifs de délestage, agrégation de la flexibilité (pour répondre aux besoins des réseaux) et participation aux marchés de capacité ou d’effacement énergétiques."
 ]
 
 # 3. Message système
@@ -100,13 +100,17 @@ with st.sidebar:
     st.write("⚡ Expert en solutions énergétiques")
     st.write("📍 Rue Jean-Charles AMAT 1, 1202 Genève")
     st.write("---")
+    st.title("Services")
     st.write("1. Audit énergétique complet")
     st.write("2. Solutions d’efficacité énergétique")
     st.write("3. Installation de panneaux photovoltaïques")
     st.write("4. Stockage d’énergie par batteries")
     st.write("5. Bornes de recharge pour véhicules électriques")
     st.write("6. Contrats de performance énergétique (CPE)") 
-    st.write("7. Solutions de pilotage et supervision (EMS/BMS)")
+    st.write("7. Solutions de pilotage et supervision (EMS/BMS)") 
+    st.write("8. Offres de fourniture d’électricité verte") 
+    st.write("9. Conseil en aides, subventions et régulations") 
+    st.write("10. Programmes de flexibilité et gestion de la demande") 
     
 # 7. Titre principal
 st.markdown("<h1 style='text-align:center;'>💬 Chat avec EcoPillier</h1>", unsafe_allow_html=True)
